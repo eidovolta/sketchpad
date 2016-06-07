@@ -1,0 +1,23 @@
+#grid {
+	margin: 20px;
+	height: 640px;
+	width: 640px;
+	background-color: black;
+}
+
+#button {
+	font-family: arial;
+	height: 16px;
+	width: 116px;
+	background-color: black;
+	color: white;
+}
+
+.gridunit {
+	height: 20px;
+	width: 20px;
+	float: left;
+	background-color: red;
+}
+
+
