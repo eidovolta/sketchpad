@@ -9,7 +9,7 @@ $(document).ready(function () {
 
 $(document).on('mouseover', '.gridunit', function() {
 	var newColor = Math.random()*255;
-	$(this).css('background-color', "white");
+	$(this).css('background-color', "black");
 });
 
 $(document).on('click', '#button', function() {
