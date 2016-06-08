@@ -1,20 +1,63 @@
 body {
-	background-color: #90DE76;
+	background-color: #9099A2;
+	font-family: arial;
+	color: white;
+}
+
+#buttons {
+	display: inline-block;
+	height: 50px;
+	color: white;
+}
+
+#title {
+	font-size: 24px;
+	margin-left: 120px;
+	margin-top: 0px;
+	display: inline-block;
 }
 
 #grid {
 	margin: 20px;
 	height: 640px;
 	width: 640px;
-	background-color: black;
+	background-color: #D5D5D5;
 }
 
 #button {
 	font-family: arial;
+	text-align: center;
 	height: 16px;
-	width: 116px;
-	background-color: orange;
-	color: black;
+	width: 150px;
+	background-color: #6D7993;
+	border-radius: 10px;
+}
+
+#resetbutton {
+	font-family: arial;
+	text-align: center;
+	height: 16px;
+	width: 220px;
+	background-color: #6D7993;
+	border-radius: 10px;
+}
+
+#rainbowbutton {
+	font-family: arial;
+	text-align: center;
+	height: 16px;
+	width: 185px;
+	background-color: #6D7993;
+	border-radius: 10px;
+}
+
+#shadebutton {
+	font-family: arial;
+	text-align: center;
+	height: 16px;
+	width: 212px;
+	background-color: #6D7993;
+	border-radius: 10px;
 }
 
 .gridunit {
