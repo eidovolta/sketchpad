@@ -24,7 +24,7 @@ $(document).on('mouseover', '.gridunit', function() { //drawing function
 	}
 });
 
-$(document).on('click', '#button', function() { //asks for user input, then creates grid dependant on user input
+$(document).on('click', '#button', function() { //asks for user input, then creates grid dependent on user input
 	var size = prompt("Type the size of your grid:");
 	clearGrid();
 	newGrid(size);
@@ -61,7 +61,7 @@ var changeGridUnit = function (size) {
 }
 
 var newGrid = function (size) {
-	for (var i = 0; i < size*size; i++) {
+	for (var i = 0, count = size*size; i < count; ++i) {
 		var box = $('<div class="gridunit"></div>');
 		box.appendTo('#grid');
 	}
