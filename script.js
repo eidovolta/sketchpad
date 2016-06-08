@@ -4,12 +4,7 @@ var shadeDraw = false; //toggle for shading draw
 var size = 32; //init size of grid 
 
 $(document).ready(function () {
-	for (var i = 0; i < 32; i++) {
-		for (var j = 0; j < 32; j ++) {
-			var box = $('<div class="gridunit"></div>');
-			box.appendTo('#grid'); //creates the initial grid
-		}
-	}
+	newGrid(size);
 });
 
 $(document).on('mouseover', '.gridunit', function() { //drawing function
