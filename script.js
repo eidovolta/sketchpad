@@ -8,37 +8,32 @@ $(document).ready(function () {
 });
 
 $(document).on('mouseover', '.gridunit', function() { //drawing function
+	if (!checkDraw) return; // checks if you want to draw
 	if (drawRainbow) { //rainbow draw
 		var r1 = Math.floor(Math.random()*255);
 		var r2 = Math.floor(Math.random()*255);
 		var r3 = Math.floor(Math.random()*255);
-		if (checkDraw) {
-			$(this).css('background-color',  'rgb(' + r1 + ',' + r2 + ',' + r3 + ')');
-		}
+		$(this).css('background-color',  rgb(r1, r2, r3));
 	}
 	else if (shadeDraw) { //shading black drawing
 		var opacity = $(this).css("opacity");
-		if (checkDraw) {
-			$(this).css('opacity', (opacity > 0.1) ? (opacity - 0.1) : opacity )
-		}
+		$(this).css('opacity', (opacity > 0.1) ? (opacity - 0.1) : opacity );
 	}
 	else {
-		if (checkDraw) { //basic black color draw
-			$(this).css('background-color',  'black');
-		}
+		$(this).css('background-color',  'black');
 	}
 });
 
 $(document).on('click', '#button', function() { //asks for user input, then creates grid dependant on user input
-	var size = prompt("Type the size of your grid:")
+	var size = prompt("Type the size of your grid:");
 	clearGrid();
-	newGrid(size)
+	newGrid(size);
 	changeGridUnit(size);
 });
 
 $(document).on('click', '#resetbutton', function() { //creates new grid
 	clearGrid();
-	newGrid(size)
+	newGrid(size);
 });
 
 $(document).on('click', '#rainbowbutton', function() { //rainbow toggle
